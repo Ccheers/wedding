@@ -4,13 +4,14 @@
       <img src="~@/assets/images/intro-image.png" />
     </div>
     <div class="movie">
-      <video
-        poster="/wedding/img/video-thumbnail.jpg"
-        :autoplay="getOS() !== 'iOS'"
-        controls
-      >
-        <source src="/wedding/intro.mp4" type="video/mp4" />
-      </video>
+      <img class="banner" src="/wedding/WX20220717-192756@2x.png" alt="wedding">
+<!--      <video-->
+<!--        poster="/wedding/img/video-thumbnail.jpg"-->
+<!--        :autoplay="getOS() !== 'iOS'"-->
+<!--        controls-->
+<!--      >-->
+<!--        <source src="/wedding/intro.mp4" type="video/mp4" />-->
+<!--      </video>-->
     </div>
   </div>
 </template>
@@ -66,8 +67,7 @@ export default {
     }
   }
   .movie {
-    //todo: 실제론 iframe 아니라 video 태그 넣을거임. 임시로 유튜브 넣어둠
-    video {
+    .banner {
       width: 100vw;
       height: 100vw;
       max-width: 460px;
